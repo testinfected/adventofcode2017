@@ -1,0 +1,28 @@
+group 'org.github.testinfected'
+
+buildscript {
+    ext.kotlin_version = '1.2.0'
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compileOnly "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
+    testCompile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.natpryce:hamkrest:1.4.2.2'
+}
