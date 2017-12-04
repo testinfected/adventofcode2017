@@ -1,2 +1,2 @@
-defmodule Adventofcode2017 do
+defmodule AdventOfCode2017 do
 end

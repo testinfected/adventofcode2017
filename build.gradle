@@ -17,6 +17,11 @@ repositories {
     mavenCentral()
 }
 
+sourceSets {
+    main.java.srcDirs += 'lib'
+    test.java.srcDirs += 'test'
+}
+
 dependencies {
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compileOnly "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
