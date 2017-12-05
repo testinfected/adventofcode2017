@@ -12,7 +12,8 @@ defmodule InverseCaptcha do
   defp captcha(input, offset) do
     0..length(input)
     |> Enum.filter(fn i -> Enum.at(input, i) == Enum.at(input, rem(i + offset, length(input))) end)
-    |> Enum.reduce(0, fn i, acc -> Enum.at(input, i) + acc end)
+    |> Enum.map(&(Enum.at(input, &1)))
+    |> Enum.reduce(0, &(&1 + &2))
   end
 
   def captcha1(input), do: captcha(input, 1)
