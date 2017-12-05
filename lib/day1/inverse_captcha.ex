@@ -1,4 +1,4 @@
-defmodule AdventOfCode2017.InverseCaptcha do
+defmodule InverseCaptcha do
   defp parse(input) do
     String.codepoints(input)
     |> Enum.map(&Integer.parse/1)

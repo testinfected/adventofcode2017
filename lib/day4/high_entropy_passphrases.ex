@@ -1,4 +1,4 @@
-defmodule AdventOfCode2017.HighEntropyPassphrases do
+defmodule HighEntropyPassphrases do
 
   def count_valid(passphrase_list) do
     passphrase_list |> String.split("\n") |> Enum.filter(&is_valid/1) |> Enum.count
@@ -10,8 +10,8 @@ defmodule AdventOfCode2017.HighEntropyPassphrases do
     is_valid(String.split(passphrase))
   end
 
-  def is_valid(passphrase) do
-    !contains_duplicates([], passphrase |> Enum.map(&to_letters/1))
+  def is_valid(words) do
+    !contains_duplicates([], words |> Enum.map(&to_letters/1))
   end
 
   defp contains_duplicates(_, []), do: false

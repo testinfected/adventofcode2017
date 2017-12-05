@@ -1,7 +1,7 @@
-defmodule AdventOfCode2017.HighEntropyPassphrases.Test do
+defmodule HighEntropyPassphrases.Test do
   use ExUnit.Case
 
-  import AdventOfCode2017.HighEntropyPassphrases
+  import HighEntropyPassphrases
 
   test "rejects empty passphrase" do
     assert is_valid("") == false

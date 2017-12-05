@@ -1,7 +1,7 @@
-defmodule AdventOfCode2017.InverseCaptcha.Test do
+defmodule InverseCaptcha.Test do
   use ExUnit.Case
 
-  import AdventOfCode2017.InverseCaptcha
+  import InverseCaptcha
 
   test "part 1" do
     assert captcha1("1234") == 0
