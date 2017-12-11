@@ -1,4 +1,4 @@
-from lib.day5.memory_reallocation import reallocate, loop
+from lib.day6.memory_reallocation import reallocate, loop
 
 
 def test_reallocation_routine():
