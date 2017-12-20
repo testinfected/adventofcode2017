@@ -56,5 +56,5 @@ end
 
 evaluate_program(input, memory)
 puts "Solution 1: #{memory.values.max}"
-puts "Solution 1: #{memory.highest}"
+puts "Solution 2: #{memory.highest}"
 
