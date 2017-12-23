@@ -1,4 +1,4 @@
-package day1
+package day01
 
 fun captcha(input: List<Int>, offset: Int): Int {
     return input.indices

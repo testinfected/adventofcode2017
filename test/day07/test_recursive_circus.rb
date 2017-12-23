@@ -1,4 +1,4 @@
-require 'lib/day7/recursive_circus'
+require 'lib/day07/recursive_circus'
 require 'test/unit'
 
 class RecursiveCircusTest < Test::Unit::TestCase

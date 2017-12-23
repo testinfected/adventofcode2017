@@ -1,4 +1,4 @@
-require 'lib/day8/registers'
+require 'lib/day08/registers'
 require 'test/unit'
 
 class RegistersTest < Test::Unit::TestCase

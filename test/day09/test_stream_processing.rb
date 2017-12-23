@@ -1,4 +1,4 @@
-require 'lib/day9/stream_processing'
+require 'lib/day09/stream_processing'
 require 'test/unit'
 
 class StreamProcessingTest < Test::Unit::TestCase
